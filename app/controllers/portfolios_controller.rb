@@ -4,11 +4,11 @@ class PortfoliosController < ApplicationController
   end
 
   def new
-    @portfolio_items = Portfolio.new
+    @portfolio_item = Portfolio.new
   end
 
   def create
-    @portfolio_items = Portfolio.new(portfolio_params)
+    @portfolio_item = Portfolio.new(portfolio_params)
     
     respond_to do |format|
       if @portfolio_items.save
@@ -20,15 +20,24 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
-  def destroy
-    @portfolio_items = Portfolio.destroy
-  end 
+   def destroy
+    # Perform the lookup
+    @portfolio_item = Portfolio.find(params[:id])
+
+    # Destroy/delete the record. !!!Look back at this for DESTROY vs. DELETE!!!!
+    @portfolio_item.delete
+
+    # Redirect
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
+    end
+  end
 
   def update
-    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
 
      respond_to do |format|
       if @portfolio_items.update(params.require(:portfolio).permit(:title, :subtitle, :body))
@@ -40,7 +49,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
       def portfolio_params
