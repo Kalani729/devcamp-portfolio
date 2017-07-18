@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def angular
+    @angular_portfolios_items = Portfolio.angular
+  end
+  
   def new
     @portfolio_item = Portfolio.new
   end
@@ -11,7 +15,7 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new(portfolio_params)
     
     respond_to do |format|
-      if @portfolio_items.save
+      if @portfolio_item.save
         format.html { redirect_to portfolios_path notice: 'Portfolio was successfully posted.' }
       else
         format.html { render :new }
