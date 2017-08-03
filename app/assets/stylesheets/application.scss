@@ -177,6 +177,7 @@ body {
 .register-text {
   color: black;
   text-align: right;
+
 }
 
 
@@ -184,6 +185,8 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+
+
 }
 
 .app-nav span {
@@ -208,6 +211,38 @@ body {
 
 }
 
+ /* Custom form */
 .app-footer {
   color: white;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-block {
+  color: #eceeef;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eceeef;
+
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eceeef;
+}
+
+.btn-primary {
+    color: #ECEEE7;
+    background-color: rgb(150, 175, 102);
+    border-color: rgb(150, 175, 102);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgb(150, 225, 102);
+  border-color: rgb(150, 225, 102);
 }
