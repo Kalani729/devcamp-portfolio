@@ -21,6 +21,9 @@
     <%= yield %>
 
     <%= render 'shared/portfolio_footer' %>
+
+    <%= alerts %>
+
   
     <% if session[:source] %>
     <p>Thanks for visiting me from <%= session[:source] %></p>
