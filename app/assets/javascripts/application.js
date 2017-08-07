@@ -19,5 +19,5 @@
 //= require jquery-ui
 //= require cable
 //= require turbolinks
-//= require_tree .
 //= require gritter
+//= require_tree .
