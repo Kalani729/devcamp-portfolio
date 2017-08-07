@@ -3,7 +3,7 @@ jQuery(document).on 'turbolinks:load', ->
   if comments.length > 0
     App.global_chat = App.cable.subscriptions.create {
       channel: "BlogsChannel"
-      blog_id: comments.data('blog_id')
+      blog_id: comments.data('blog-id')
     },
     connected: ->
     disconnected: ->
