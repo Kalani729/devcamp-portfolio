@@ -170,3 +170,37 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+/*
+ * Custom styles
+ */
+
+.social-links li {
+  font-size: 2.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
+}
+
+.comment-attribution {
+  font-size: .6em;
+  font-style: italic; 
+  margin-top: 30px;
+  padding-top: 2px;
+  border-top: 1px solid #999;
+  text-align: right;
+
+}
+
+.comment-content {
+
+}
