@@ -180,6 +180,7 @@ h6, .h6 {
 
 .comment-card > .card {
   margin-top: 15px;
+  
 }
 
 .comment-attribution {
@@ -197,10 +198,8 @@ h6, .h6 {
   margin-top: 30px;
   padding-top: 2px;
   border-top: 1px solid #999;
-  text-align: right;
-
-}
-
-.comment-content {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 
 }
