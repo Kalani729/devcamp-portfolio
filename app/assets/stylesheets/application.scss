@@ -36,6 +36,17 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -288,5 +299,5 @@ body {
 
 .skill {
   margin-top: 5px;
-  margin_bottom: 5px;
+  margin-bottom: 5px;
 }
