@@ -36,6 +36,17 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -216,12 +227,38 @@ body {
   color: white;
 }
 
+.app-card-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
 .card {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-block {
   color: #eceeef;
+
+}
+
+#jobHistory > .card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+#jobHistory img > .card-block {
+  max-width: 50px;
+  margin-bottom: 5px;
+  float: auto;
+}
+
+#education > .card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .form-control {
@@ -258,4 +295,9 @@ body {
 
 .tech-news > .card {
   padding: 30px;
+}
+
+.skill {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

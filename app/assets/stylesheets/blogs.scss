@@ -184,15 +184,6 @@ h6, .h6 {
 }
 
 .comment-attribution {
-  font-size: .8em;
-  font-style: italic;
-}
-
-.comment-name {
-  font-weight: 700;
-}
-
-.comment-attribution {
   font-size: .6em;
   font-style: italic; 
   margin-top: 30px;
@@ -201,5 +192,21 @@ h6, .h6 {
   text-align: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
 
+.comment-name {
+  font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
