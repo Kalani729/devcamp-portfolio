@@ -216,12 +216,38 @@ body {
   color: white;
 }
 
+.app-card-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
 .card {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-block {
   color: #eceeef;
+
+}
+
+#jobHistory > .card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+#jobHistory img > .card-block {
+  max-width: 50px;
+  margin-bottom: 5px;
+  float: auto;
+}
+
+#education > .card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .form-control {
